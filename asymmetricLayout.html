@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비대칭 레이아웃</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .asym-section {
+            padding: 40px 0;
+        }
+
+        .img-large {
+            height: 300px; /* 큰 이미지 크기 설정 */
+            background: url('https://via.placeholder.com/600x300') no-repeat center center;
+            background-size: cover;
+        }
+
+        .img-small {
+            height: 150px; /* 작은 이미지 크기 설정 */
+            background: url('https://via.placeholder.com/300x150') no-repeat center center;
+            background-size: cover;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 네비게이션 바 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">로고</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">링크 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">링크 2</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 비대칭 섹션 -->
+<div class="container asym-section">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="img-large"></div> <!-- 큰 이미지 -->
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <div class="content">
+                <h2>제목</h2>
+                <p>이곳에 본문 내용을 추가하세요.</p>
+                <a href="#" class="btn btn-primary">더 보기</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="img-small"></div> <!-- 작은 이미지 -->
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+            <div class="content">
+                <h2>소제목</h2>
+                <p>추가 정보를 여기에 입력하세요.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="img-small"></div> <!-- 또 다른 작은 이미지 -->
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

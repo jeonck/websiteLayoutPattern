@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>분할 화면 레이아웃</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* 분할 화면 스타일링 */
+        .split-screen {
+            height: 100vh; /* 화면 높이를 전체로 설정 */
+        }
+        .left, .right {
+            height: 100%;
+            overflow: auto; /* 내용이 많을 경우 스크롤 */
+        }
+        .left {
+            background: url('https://via.placeholder.com/600') no-repeat center center;
+            background-size: cover; /* 이미지가 영역을 꽉 채우도록 */
+        }
+        .right {
+            background: #f8f9fa;
+        }
+        /* 네비게이션 바 투명화 */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* 흰색 텍스트 */
+        }
+    </style>
+</head>
+<body>
+
+<!-- 네비게이션 바 -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">로고</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">링크 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">링크 2</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 분할 화면 컨텐츠 -->
+<div class="container-fluid">
+    <div class="row split-screen">
+        <div class="col-md-6 left d-flex justify-content-center align-items-center">
+            <!-- 좌측 컨텐츠, 배경 이미지 -->
+        </div>
+        <div class="col-md-6 right d-flex justify-content-center align-items-center">
+            <div>
+                <h1>제목</h1>
+                <p>이곳에 내용을 추가하세요.</p>
+                <a href="#" class="btn btn-primary">더 알아보기</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

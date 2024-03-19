@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 레이아웃</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- 네비게이션 바 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">로고</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">홈 <span class="sr-only">(현재)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">특징</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">서비스</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">연락처</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 카드 컨테이너 -->
+<div class="container mt-4">
+    <div class="row">
+        <!-- 카드 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="카드 이미지">
+                <div class="card-body">
+                    <h5 class="card-title">카드 제목 1</h5>
+                    <p class="card-text">이 카드에 대한 간단한 설명입니다. 더 많은 정보를 제공하거나, 사용자의 행동을 유도할 수 있습니다.</p>
+                    <a href="#" class="btn btn-primary">더 알아보기</a>
+                </div>
+            </div>
+        </div>
+        <!-- 카드 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="카드 이미지">
+                <div class="card-body">
+                    <h5 class="card-title">카드 제목 2</h5>
+                    <p class="card-text">다른 콘텐츠를 포함하는 두 번째 카드입니다. 각 카드는 독립적인 정보 블록으로 기능합니다.</p>
+                    <a href="#" class="btn btn-primary">더 알아보기</a>
+                </div>
+            </div>
+        </div>
+        <!-- 카드 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="카드 이미지">
+                <div class="card-body">
+                    <h5 class="card-title">카드 제목 3</h5>
+                    <p class="card-text">세 번째 카드의 내용입니다. 이러한 카드는 다양한 콘텐츠를 시각적으로 구분하여 표시하는 데 유용합니다.</p>
+                    <a href="#" class="btn btn-primary">더 알아보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
